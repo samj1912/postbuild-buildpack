@@ -1,0 +1,21 @@
+api = "0.6"
+
+[buildpack]
+id = "sam/postbuild"
+version = "0.0.1"
+name = "postBuild"
+desription = "Run a postBuild script as a part of your build process"
+homepage = "https://github.com/samj1912/label-descriptor-buildpack"
+keywords = ["postBuild", "binder", "repo2docker"]
+
+[[buildpack.licenses]]
+type = "MIT"
+
+[[stacks]]
+id = "io.buildpacks.stacks.bionic"
+
+[[stacks]]
+id = "heroku-18"
+
+[[stacks]]
+id = "heroku-20"
